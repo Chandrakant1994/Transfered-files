@@ -1,0 +1,13 @@
+Using Forms in React
+
+- Imp - React components name should always start with a Capital letter
+
+- constructor should always be small 
+
+
+Working with sharepoint API Javascript
+
+- add script tags
+
+	<script type="text/javascript" src="_layouts/15/sp.runtime.js"></script>
+	<script type="text/javascript" src="_layouts/15/sp.js"></script>

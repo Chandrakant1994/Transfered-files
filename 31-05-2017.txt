@@ -1,0 +1,11 @@
+SharePoint Framework -
+
+	Its a Page and Web Part Model that provides full support for client-side Sharepoint development,
+	easy integration with Sharepoint data, and support for open source tooling.
+
+	Key Features -
+
+		- The controls are rendered in normal page DOM
+		- The controls are responsive and accessible by nature
+		- Its framework agnostic. You can use any breoser framework you like- React, Knockout, Angular
+		-  

@@ -1,0 +1,47 @@
+node_modules/.bin :
+
+	npm run start uses the react-scripts bin file, which is at ./node_modules/.bin/react-scripts however,
+	this should be symlinked into ./node_modules/react-scripts/bin/react-scripts.js.
+	This symlink means that npm can find the cross-spawn module which is a subdependency of react-scripts.
+
+Path :
+	The path module provides utilities for working with file and directory paths.
+
+
+path.relative(from, to) :
+
+	The path.relative() method returns the relative path from from to to. 
+	Note : If from and to each resolve to the same path (after calling path.resolve() on each), a zero-length string is returned.
+	
+	For example:
+		path.relative('C:\\orandea\\test\\aaa', 'C:\\orandea\\impl\\bbb');
+		// Returns: '..\\..\\impl\\bbb'
+
+path.resolve([...paths]) :
+
+	The path.resolve() method resolves a sequence of paths or path segments into an absolute path.
+	Note : If after processing all given path segments an absolute path has not yet been generated, the current working directory is used.
+	If no path segments are passed, path.resolve() will return the absolute path of the current working directory.
+
+	For example:
+		path.resolve('/foo/bar', './baz');
+		// Returns: '/foo/bar/baz'
+
+		path.resolve('/foo/bar', '/tmp/file/');
+		// Returns: '/tmp/file'
+
+Other properties :
+	path.basename(path[, ext])
+	path.delimiter
+	path.dirname(path)
+	path.extname(path)
+	path.format(pathObject)	
+	path.isAbsolute(path)
+	path.join([...paths])
+	path.normalize(path)
+	path.parse(path)
+	path.posix
+	path.relative(from, to)
+	path.resolve([...paths])
+	path.sep
+	path.win32
